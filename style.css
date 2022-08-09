@@ -9,6 +9,7 @@ h2 {
 h4 {
   display: none;
   font-size: small;
+  margin-top: 10px;
 }
 section {
   background-color: #f0f2f4;
@@ -33,10 +34,18 @@ section {
   display: block;
   transition: 0.5s ease-in-out;
 }
-.carousel-control-next-icon, .carousel-control-prev-icon {
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
   display: none;
-  
 }
+
+.carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  background-color: #4e4e4e;
+  border-radius: 50%;
+}
+
 @media (max-width: 768px) {
   .forDesktop {
     display: none;
